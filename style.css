@@ -22,19 +22,6 @@
 #lezioni {
   text-align: center;
 }
-@media screen and (max-width: 420px ){
-  #lezioni .row .left, #lezioni .row .right{
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  h1{
-    font-size: 40px;
-  }
-  h3{
-    font-size: 30px;
-  }
-}
 /* BLOCCO STEPS */
 #steps .row>.left,
 #steps .row>.central,
@@ -46,7 +33,6 @@
 #steps {
   text-align: center;
 }
-
 /* BLOCCO PERCHE */
 #why {
   text-align: center;
@@ -82,4 +68,29 @@ img {
 
 .clear {
   clear: both;
+}
+@media screen and (max-width: 420px ){
+  #lezioni .row, #steps .row, #why .row{
+    width: 100%;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  #lezioni .row{
+    margin-top: 0;
+  }
+  #lezioni .row .left, #lezioni .row .right{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right{
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
