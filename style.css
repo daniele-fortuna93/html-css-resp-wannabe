@@ -73,37 +73,53 @@ img {
 /* 768px */
 @media screen and (max-width: 768px ){
   *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+  /* mix */
+  .container{
+    padding: 0 10px;
   }
   #lezioni .row,
   #steps .row,
   #why .row{
+    margin-top: 25px;
     width: 100%;
-  }
-  #steps .row, #why .row{
     padding: 15px 0px;
-    font-size: 20px;
-    margin-top: 50px;
   }
+  img {
+    height: 150px;
+  }
+  /* /mix */
+  /* typo */
   h1{
+    margin-bottom: 15px;
     font-size: 40px;
   }
   h3{
+    margin: 10px;
     font-size: 30px;
   }
+  #lezioni,
+  #steps,
+  #why{
+    font-size: 20px;
+  }
+  /* /typo */
   #lezioni .row{
-    margin-top: 0;
   }
   #lezioni .row .left,
   #lezioni .row .right{
     width: 100%;
     margin-bottom: 15px;
-    font-size: 20px;
+    padding: 0 10px;
   }
   #steps .row>.left,
   #steps .row>.central{
-    width: 50%;
-    margin-bottom: 15px;
+    width: calc(50% - 30px);
+    margin: 15px 15px;
+
   }
   #steps .row>.right{
     width: 100%;
@@ -121,6 +137,9 @@ img {
 /* /768px */
 /* 420px */
 @media screen and (max-width: 420px ){
+  #lezioni .row{
+    margin-top: 10px;
+  }
   #lezioni .row .left,
   #lezioni .row .right{
     margin-bottom: 10px;
@@ -128,7 +147,7 @@ img {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right{
-    width: 100%;
+    width: calc( 100% - 30px );
     margin-bottom: 10px;
   }
 }
